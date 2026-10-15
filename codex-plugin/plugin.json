@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "obsidian-codex-assistant",
+  "version": "0.2.0",
+  "description": "Search notes, inspect and link Canvas cards, and carefully organize an Obsidian vault from Codex.",
+  "author": { "name": "Personal plugin" },
+  "keywords": ["obsidian", "notes", "vault", "markdown", "knowledge management"],
+  "extensions": {
+    "com.openai": {
+      "requires_local_executor": true,
+      "onboardingSkill": "./skills/obsidian-vault/SKILL.md",
+      "interface": {
+        "displayName": "Obsidian Vault Assistant",
+        "shortDescription": "Search, connect, and review your Obsidian notes",
+        "longDescription": "Use Codex to search and read Markdown notes, inspect Obsidian Canvas cards and connections, find related notes, and review cleanup issues in your configured vault. Create notes and canvases or stage edits for review. Existing note and Canvas edits are applied only after your explicit approval.",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "defaultPrompt": [
+          "Connect my Obsidian vault and find notes related to this topic.",
+          "Find useful links I could add to the current note.",
+          "Review my vault for broken links and orphan notes."
+        ]
+      }
+    }
+  }
+}
