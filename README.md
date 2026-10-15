@@ -125,25 +125,3 @@ marketplace.json    Local Codex marketplace definition
 
 Current version: **0.2.0**
 
-## العربية
-
-**استخدم Codex مع ملاحظات Obsidian ولوحات Canvas.** المشروع فيه إضافة محلية لـCodex وإضافة اختيارية لـObsidian. تقدر تبحث في الملاحظات، وتكتشف روابط محتملة، وتراجع مشاكل التنسيق، وتفحص بطاقات وروابط Canvas، وتقترح تعديلات قبل تطبيقها.
-
-### التثبيت في Codex
-
-تحتاج Node.js. أضف المستودع كسوق إضافات محلي:
-
-```sh
-codex plugin marketplace add ziyadhamdym/obsidian-codex-assistant
-codex plugin add obsidian-codex-assistant@obsidian-codex-local
-```
-
-بعدها اطلب من Codex الاتصال بفولت Obsidian وأعطه المسار الكامل لمجلد الفولت. الاتصال يستمر خلال جلسة MCP الحالية فقط؛ أعد الاتصال بعد إعادة تشغيل الجلسة.
-
-### التثبيت في Obsidian
-
-انسخ مجلد `obsidian-plugin` إلى `<مجلد الفولت>/.obsidian/plugins/obsidian-codex-assistant/`، ثم فعّل **Obsidian Codex Assistant** من **Settings → Community plugins**. افتح قائمة الأوامر لاستخدام أوامر البحث والتنظيف والروابط وCanvas. الإضافة مناسبة لمن يبحث عن إضافة Obsidian للذكاء الاصطناعي، أو ربط الملاحظات، أو تنظيم لوحات Canvas بمساعدة Codex.
-
-### الأمان والخصوصية
-
-خادم Codex محلي ويتعامل مع الفولت الذي تختاره فقط، ويتجاهل المجلدات المخفية والروابط الرمزية. محتوى الملاحظات الذي يرجع إلى Codex تتم معالجته حسب إعدادات بيانات حسابك لدى مضيف الذكاء الاصطناعي. تعديلات Codex على ملاحظة أو Canvas موجودة لا تُحفظ إلا بعد موافقتك الصريحة. لا توجد أداة لحذف الملفات.
