@@ -3,7 +3,7 @@
   "name": "Obsidian Codex Assistant",
   "version": "0.2.0",
   "minAppVersion": "1.5.0",
-  "description": "Search notes, inspect and link Canvas cards, and create notes and canvases with review.",
+  "description": "Search Obsidian notes, suggest wiki links, review vault cleanup, and inspect or create Canvas boards with Codex.",
   "author": "Personal plugin",
   "isDesktopOnly": false
 }

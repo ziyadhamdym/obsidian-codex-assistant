@@ -1,6 +1,12 @@
-# Obsidian Codex Assistant
+# Obsidian Codex Assistant: Obsidian Plugin for Codex Notes and Canvas
 
-**Use Codex with your Obsidian Markdown notes and Canvas boards.** This project includes a local Codex plugin and an optional Obsidian community plugin. It can search notes, find useful connections, review common cleanup issues, inspect Canvas cards and edges, and prepare note or Canvas changes for your approval.
+**Search, connect, and organize an Obsidian vault with Codex.** Obsidian Codex Assistant is an open-source Obsidian plugin and local Codex plugin for Markdown note search, wiki-link suggestions, vault cleanup reviews, and Obsidian Canvas inspection and creation. It helps you find related notes, repair your knowledge graph, and work with Canvas boards while keeping changes reviewable.
+
+Use it as an **Obsidian AI assistant**, a **Codex plugin for Obsidian**, or a local **MCP server for your Markdown knowledge base**. The Codex integration reads only the vault folder you select and asks before applying staged edits.
+
+**Platforms:** macOS, Windows, and Linux for the Obsidian plugin. Codex features require a local executor and Node.js.
+
+**Search terms:** Obsidian plugin, Codex plugin, Obsidian Canvas, Markdown search, knowledge management, note linking, vault cleanup, local MCP server.
 
 > This is an independent community project. It is not affiliated with or endorsed by Obsidian or OpenAI.
 
@@ -19,7 +25,7 @@
 
 ### In Obsidian
 
-The optional Obsidian plugin adds these Command Palette commands:
+The optional Obsidian community plugin adds these Command Palette commands:
 
 - **Show vault overview**
 - **Suggest links for current note**
@@ -37,13 +43,13 @@ Choosing **Add card** in the Canvas suggestions dialog adds that note card and a
 
 Codex runs the MCP server locally. You need Node.js available on your computer.
 
-1. Install this repository as a local Codex plugin marketplace:
+1. Add this repository as a Codex plugin marketplace:
 
    ```sh
-   codex plugin marketplace add <owner>/obsidian-codex-assistant
+   codex plugin marketplace add ziyadhamdym/obsidian-codex-assistant
    ```
 
-   You can also use the repository's HTTPS Git URL or a local clone path.
+   You can also use `https://github.com/ziyadhamdym/obsidian-codex-assistant.git` or a local clone path.
 
 2. Install and enable the plugin:
 
@@ -128,7 +134,7 @@ Current version: **0.2.0**
 تحتاج Node.js. أضف المستودع كسوق إضافات محلي:
 
 ```sh
-codex plugin marketplace add <owner>/obsidian-codex-assistant
+codex plugin marketplace add ziyadhamdym/obsidian-codex-assistant
 codex plugin add obsidian-codex-assistant@obsidian-codex-local
 ```
 
@@ -136,7 +142,7 @@ codex plugin add obsidian-codex-assistant@obsidian-codex-local
 
 ### التثبيت في Obsidian
 
-انسخ مجلد `obsidian-plugin` إلى `<مجلد الفولت>/.obsidian/plugins/obsidian-codex-assistant/`، ثم فعّل **Obsidian Codex Assistant** من **Settings → Community plugins**. افتح قائمة الأوامر لاستخدام أوامر البحث والتنظيف والروابط وCanvas.
+انسخ مجلد `obsidian-plugin` إلى `<مجلد الفولت>/.obsidian/plugins/obsidian-codex-assistant/`، ثم فعّل **Obsidian Codex Assistant** من **Settings → Community plugins**. افتح قائمة الأوامر لاستخدام أوامر البحث والتنظيف والروابط وCanvas. الإضافة مناسبة لمن يبحث عن إضافة Obsidian للذكاء الاصطناعي، أو ربط الملاحظات، أو تنظيم لوحات Canvas بمساعدة Codex.
 
 ### الأمان والخصوصية
 
